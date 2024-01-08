@@ -64,14 +64,15 @@ export Disable_autosamba="1"                 # 去掉源码默认自选的luci-a
 # 手动更换默认主题
 # uci set luci.main.mediaurlbase='/luci-static/neobird' && uci commit luci
 
-rm -rf feeds/luci/applications/luci-app-argon-config
+
 # rm -rf feeds/luci/applications/luci-app-netdata
 # git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
-git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+rm -rf feeds/luci/applications/luci-app-gowebdav
 
-rm -rf package/lean/luci-theme-argon/
+svn co https://github.com/sbwml/openwrt_pkgs/trunk/luci-app-gowebdav package/luci-app-gowebdav
 
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 21.x feeds/packages/lang/golang
 # 其他
 export Ttyd_account_free_login="1"           # 设置ttyd免密登录(1为启用命令,填0为不作修改)
 export Delete_unnecessary_items="0"          # 个别机型内一堆其他机型固件,删除其他机型的,只保留当前主机型固件(1为启用命令,填0为不作修改)
