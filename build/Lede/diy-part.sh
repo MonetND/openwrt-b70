@@ -70,7 +70,7 @@ rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 21.x feeds/packages/lang/golang
 
 rm -rf feeds/luci/applications/luci-app-netdata
-rm -rf feeds/langge1/applications/luci-app-netdata
+rm -rf feeds/langge1/luci-app-netdata
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 rm -rf feeds/luci/applications/luci-app-gowebdav
 rm -rf feeds/langge1/luci-app-gowebdav
