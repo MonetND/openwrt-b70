@@ -72,6 +72,10 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-netdata package/luci-ap
 rm -rf feeds/luci/applications/luci-app-gowebdav
 rm -rf feeds/danshui1/luci-app-gowebdav
 rm -rf feeds/danshui1/luci-app-serverchan
+rm -rf package/luci-app-serverchan 
+rm -rf feeds/langge1/relevance/mmdvm-luci
+rm -rf feeds/langge1/relevance/libmmdvm
+rm -rf feeds/langge1/relevance/mmdvm-host compile
 git clone --depth=1 https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 #rm -rf feeds/danshui1/relevance/gowebdav
 #svn co https://github.com/sbwml/openwrt_pkgs/trunk/luci-app-gowebdav package/luci-app-gowebdav
